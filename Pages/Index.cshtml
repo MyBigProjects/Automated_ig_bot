@@ -1,0 +1,191 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!--
+@{
+    ViewBag.Title = "Frontend to Backend Example";
+}-->
+
+<h1>Frontend to Backend Example</h1>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+    <button onclick="submitForm()">Submit</button>
+</form>
+<!--
+@section Scripts {
+    <script src="~/Scripts/script.js"></script>
+}-->
+
+<style>
+    body{
+        background-color: #000000;
+    }
+    .txt{
+        color: white;
+        font-family: monospace;
+        text-align: center;
+        font-size: 300%;
+        padding-top: 3%;
+    }
+    .clock{
+        color: white;
+        font-family: monospace;
+        text-align: center;
+        padding-top: 3%;
+        font-size: 750%;
+    }
+    #console {
+        background-color: black;
+        color: #00ff07;
+        font-family: monospace;
+        border: 2px solid #ffffff;
+        padding: 10px;
+    }
+
+    #input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #00ff00;
+        font-family: monospace;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="txt">
+            NEW MEMES IN
+        </h2>
+        <h1 class="clock"; id="time">
+            <!--24-->00 : 00 : 00
+        </h1>
+    </div>
+    <div id="console">
+        <h6 style="color: #ffffff;">
+            COMMAND PROMT
+        </h6>
+        <div id="output"></div>
+            <input id="input" type="text" autofocus>
+    </div>
+
+    <script>
+        //
+
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            //  Send data to the backend
+            $.ajax({
+                type: "POST",
+                url: "/Home/ProcessData",
+                data: { name: name, email: email },
+                success: function(response) {
+                    // Handle the response from the backend
+                    console.log(response);
+                },
+            error: function(error) {
+                console.error('Error:', error);
+            }
+        });
+    }
+
+        //
+        /*let countDownTime = localStorage.getItem('countDownTime');
+
+        // If it's not in localStorage, initialize it to 24 hours
+        if (countDownTime === null) {
+            countDownTime = 24 * 60 * 60; //24
+        } else {
+            // Convert the stored value to a number
+            countDownTime = parseInt(countDownTime);
+        }
+
+        function updateCountDown(){
+            const hours = Math.floor(countDownTime / 3600);
+            const minutes = Math.floor((countDownTime % 3600) / 60);
+            const seconds = countDownTime % 60;
+
+            const countDownElement = document.getElementById('time');
+            countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
+
+            console.log(`${hours} : ${minutes} : ${seconds}`);
+
+            countDownTime--;
+
+            localStorage.setItem('countDownTime', countDownTime.toString());
+
+            if(countDownTime < 0){
+                SiecleDone(countDownElement);
+                countDownTime = 24 * 60 * 60;  //24
+
+                localStorage.setItem('countDownTime', countDownTime.toString());
+            }
+        }
+        setInterval(updateCountDown, 1000);
+
+        function SiecleDone(element){
+            let chars = ['&','<',')','8','^','!',"%",'#','}','+','_','=','-','='];
+
+            for (let i = 1; i <= 50; i++) {
+                let one = chars[getRandomInt(0,chars.length)] + chars[getRandomInt(0,chars.length)];
+                let two = chars[getRandomInt(0,chars.length)] + chars[getRandomInt(0,chars.length)];
+                let three = chars[getRandomInt(0,chars.length)] + chars[getRandomInt(0,chars.length)];
+
+                element.textContent = one + ' : ' + two + ' : ' + three;
+            }
+        }
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        async function delayedAction() {
+            console.log('Before delay');
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+            console.log('After 2 seconds');
+        }*/
+
+        //delayedAction();
+        //terminal
+        const consoleOutput = document.getElementById('output');
+        const consoleInput = document.getElementById('input');
+
+        consoleInput.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                const command = consoleInput.value;
+                consoleInput.value = ''; // Clear input field
+                processCommand(command);
+            }
+        });
+
+        function processCommand(command) {
+            // Implement your command processing logic here
+            // Display the result in the consoleOutput div
+
+            consoleOutput.innerHTML += `<p>${command}</p>`;
+
+            if (command === '*help' || command === '*h' || command === '*?') {
+                consoleOutput.innerHTML += `<p>Available commands: [none RN]</p>`;
+            } 
+            else if (command === '*clear' || command === '*c' || command === '*"') {
+                consoleOutput.innerHTML = '';
+            } 
+            else {
+                consoleOutput.innerHTML += `<p>Command not recognized: ${command}</p>`;
+            }
+        }
+
+    </script>
+</body>
