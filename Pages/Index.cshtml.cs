@@ -29,7 +29,7 @@ public class IndexModel : PageModel
 
         // Optionally, you can log the action or handle any errors here
     }
-    [HttpPost]
+    /*[HttpPost]
     public ActionResult ProcessData(string name, string email)
     {
         // Process the data or perform any backend tasks
@@ -37,5 +37,5 @@ public class IndexModel : PageModel
 
         // Return a JSON response back to the frontend
         return Json(new { status = "success", message = "Data received successfully!" });
-    }
+    }*/
 }
