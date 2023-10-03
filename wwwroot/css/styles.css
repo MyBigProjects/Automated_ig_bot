@@ -1,0 +1,32 @@
+body{
+    background-color: #000000;
+}
+.txt{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    font-size: 300%;
+    padding-top: 3%;
+}
+.clock{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 750%;
+}
+#console {
+    background-color: black;
+    color: #00ff07;
+    font-family: monospace;
+    border: 2px solid #ffffff;
+    padding: 10px;
+}
+
+#input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #00ff00;
+    font-family: monospace;
+}
