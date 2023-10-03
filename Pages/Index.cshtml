@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Home page";
 }
-@* <!--
+@* <!--   all of this is from website tutorial that i will folow serch "how do frontend and backend comunicate" something like that 
 @{
     ViewBag.Title = "Frontend to Backend Example";
 }--> *@
@@ -59,6 +59,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styles.css"/>
     <title>Memes in instagram</title>
 </head>
 
@@ -81,6 +82,7 @@
 
     <script>
         //
+        /*   here is js stuff of that tutorial above and it probably needs fix at list in url
 
         function submitForm() {
             var name = document.getElementById("name").value;
@@ -101,64 +103,11 @@
             });
         }
 
-        //
-        /*let countDownTime = localStorage.getItem('countDownTime');
+        */
 
-        // If it's not in localStorage, initialize it to 24 hours
-        if (countDownTime === null) {
-            countDownTime = 24 * 60 * 60; //24
-        } else {
-            // Convert the stored value to a number
-            countDownTime = parseInt(countDownTime);
-        }
+        //all of js code that was here is now in clock.js file in wwwRout folder
 
-        function updateCountDown(){
-            const hours = Math.floor(countDownTime / 3600);
-            const minutes = Math.floor((countDownTime % 3600) / 60);
-            const seconds = countDownTime % 60;
-
-            const countDownElement = document.getElementById('time');
-            countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
-
-            console.log(`${hours} : ${minutes} : ${seconds}`);
-
-            countDownTime--;
-
-            localStorage.setItem('countDownTime', countDownTime.toString());
-
-            if(countDownTime < 0){
-                SiecleDone(countDownElement);
-                countDownTime = 24 * 60 * 60;  //24
-
-                localStorage.setItem('countDownTime', countDownTime.toString());
-            }
-        }
-        setInterval(updateCountDown, 1000);
-
-        function SiecleDone(element){
-            let chars = ['&','<',')','8','^','!',"%",'#','}','+','_','=','-','='];
-
-            for (let i = 1; i <= 50; i++) {
-                let one = chars[getRandomInt(0,chars.length)] + chars[getRandomInt(0,chars.length)];
-                let two = chars[getRandomInt(0,chars.length)] + chars[getRandomInt(0,chars.length)];
-                let three = chars[getRandomInt(0,chars.length)] + chars[getRandomInt(0,chars.length)];
-
-                element.textContent = one + ' : ' + two + ' : ' + three;
-            }
-        }
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min)) + min;
-        }
-        async function delayedAction() {
-            console.log('Before delay');
-            await new Promise((resolve) => setTimeout(resolve, 1000));
-            console.log('After 2 seconds');
-        }*/
-
-        //delayedAction();
-        //terminal
+        //terminal code here 
         const consoleOutput = document.getElementById('output');
         const consoleInput = document.getElementById('input');
 

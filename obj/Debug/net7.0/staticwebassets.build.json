@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xy93cZM5k/ZDmxM/A5GkGyNHAUK7wcoerL/JY8iQG2w=",
+  "Hash": "pnOvLk8RAcxF3nLYn8k4C/FXcqQ9se+i+V+NJQG3oAE=",
   "Source": "AutomatedInstagramBot",
   "BasePath": "_content/AutomatedInstagramBot",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\student\\Desktop\\AutomatedInstagramBot\\wwwroot\\css\\styles.css",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\student\\Desktop\\AutomatedInstagramBot\\wwwroot\\",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\student\\Desktop\\AutomatedInstagramBot\\wwwroot\\favicon.ico",
