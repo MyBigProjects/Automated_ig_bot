@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bVJyAydziCSWCg57PjkeTkxA0AnQcPDN1c4brwTclChRs8/kNZAIcFWwuikPU5D8aNTgx9vyuvOJLGhv5pu5Hg==",
+  "dgSpecHash": "dAfeuIUA2Y0XJWhGoVWao1jq1B84PrnwC1nElfQGbUk0siuVWMGP6mx0m4+stNrIGiEMIpcm9kMx/BwMUlt9Mg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\student\\Desktop\\AutomatedInstagramBot\\AutomatedInstagramBot.csproj",
+  "projectFilePath": "/home/student/Desktop/AutomatedInstagramBot/AutomatedInstagramBot.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -9,14 +9,24 @@
         }
 
         function updateCountDown(){
-            const hours = Math.floor(countDownTime / 3600);
-            const minutes = Math.floor((countDownTime % 3600) / 60);
-            const seconds = countDownTime % 60;
+            let hours = Math.floor(countDownTime / 3600);
+            let minutes = Math.floor((countDownTime % 3600) / 60);   //here was constants
+            let seconds = countDownTime % 60;
 
             const countDownElement = document.getElementById('time');
+
+            if (hours < 10) {
+                hours = '0' + hours.toString();  //naaa....
+            }
+            if (minutes < 10) {
+                minutes = '0' + minutes.toString();
+            }
+            if (seconds < 10) { 
+                seconds = '0' + seconds.toString();                
+            }
             countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
 
-            console.log(`${hours} : ${minutes} : ${seconds}`);
+            console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
 
             countDownTime--;
 
