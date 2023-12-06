@@ -3,51 +3,54 @@
 @{
     ViewData["Title"] = "Home page";
 }
-@* <!--   all of this is from website tutorial that i will folow serch "how do frontend and backend comunicate" something like that 
+@* <!-- all of this is from website tutorial that i will folow serch "how do frontend and backend comunicate" something
+like that
 @{
-    ViewBag.Title = "Frontend to Backend Example";
+ViewBag.Title = "Frontend to Backend Example";
 }--> *@
 
 @* <h1>Frontend to Backend Example</h1>
 <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" required><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" required><br><br>
-    <button onclick="submitForm()">Submit</button>
+<label for="name">Name:</label>
+<input type="text" id="name" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" required><br><br>
+<button onclick="submitForm()">Submit</button>
 </form>
 <!--
 @section Scripts {
-    <script src="~/Scripts/script.js"></script>
+<script src="~/Scripts/script.js"></script>
 }--> *@
 
-@* here was css of this page and now it is in styles.scc file in wwwroot folder   *@
+@* here was css of this page and now it is in styles.scc file in wwwroot folder *@
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/css/styles.css"/>
+    <link rel="stylesheet" href="~/css/styles.css" />
     <title>Memes in instagram</title>
 </head>
 
 <body>
+
+    <script src="~/js/Index.js"></script>
+
+   
     <div>
         <h2 class="txt">
             NEW MEMES IN
         </h2>
-        <h1 class="clock"; id="time">
+        <h1 class="clock" ; id="time">
             24 : 00 : 00
         </h1>
     </div>
-    <div id="console">
-        <h6 style="color: #ffffff;">
-            COMMAND PROMT
-        </h6>
-        <div id="output"></div>
-            <input id="input" type="text" autofocus>
-    </div>
+    <div class="LilTxt">    
+        <p>Tick-tock, laugh o'clock! Welcome to InstagramBot Site, where humor has its own schedule. We've redefined the meme-posting experience with our innovative clock countdown. Set at 24 hours, our clock is the heartbeat of your daily meme infusion.</p>
 
+        <p>Picture this: a dynamic platform that uploads three side-splitting memes to our Instagram( witch you can folowe at <a href="https://www.instagram.com/thatmemeguy35/">thatmemeguy35</a> ) every time the clock hits zero. It's like clockwork comedy! You won't miss a single moment of hilarity, as our curated selection spans a spectrum of topics, keeping your feed fresh and funny.</p>
+
+        </div>
     @* <script> *@
-        <script src="~/js/Index.js"></script>
+        <script src="~/js/clock.js"></script>
     @* </script> *@
 </body>

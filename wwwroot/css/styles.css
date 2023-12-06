@@ -2,11 +2,21 @@ body{
     background-color: #000000;
     overflow: hidden;
 }
+a{
+    color: yellow;
+}
 .txt{
     color: white;
     font-family: monospace;
     text-align: center;
     font-size: 300%;
+    padding-top: 3%;
+}
+.LilTxt{
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: 100%;
     padding-top: 3%;
 }
 .clock{

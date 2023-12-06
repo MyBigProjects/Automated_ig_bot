@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/student/Desktop/AutomatedInstagramBot/AutomatedInstagramBot.csproj": {}
+    "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj": {}
   },
   "projects": {
-    "/home/student/Desktop/AutomatedInstagramBot/AutomatedInstagramBot.csproj": {
+    "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/student/Desktop/AutomatedInstagramBot/AutomatedInstagramBot.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj",
         "projectName": "AutomatedInstagramBot",
-        "projectPath": "/home/student/Desktop/AutomatedInstagramBot/AutomatedInstagramBot.csproj",
-        "packagesPath": "/home/student/.nuget/packages/",
-        "outputPath": "/home/student/Desktop/AutomatedInstagramBot/obj/",
+        "projectPath": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/student/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -37,13 +37,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.62.0, )"
+            },
+            "Google.Apis.Drive.v3": {
+              "target": "Package",
+              "version": "[1.62.0.3155, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.124/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

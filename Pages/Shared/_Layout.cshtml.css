@@ -1,6 +1,18 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.circle{
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Make the div ignore mouse events, so it won't interfere with the text */
+  transition: background-color 0.3s ease;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
