@@ -25,17 +25,19 @@
         // all of js code that was here is now in clock.js file in wwwRout folder
 
 
-//terminal code here 
-const consoleOutput = document.getElementById('output');
-const consoleInput = document.getElementById('input');
 
-consoleInput.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        const command = consoleInput.value;
-        consoleInput.value = ''; // Clear input field
-        processCommand(command);
-    }
-});
+        
+//terminal code here 
+// const consoleOutput = document.getElementById('output');
+// const consoleInput = document.getElementById('input');
+
+// consoleInput.addEventListener('keydown', function (event) {
+//     if (event.key === 'Enter') {
+//         const command = consoleInput.value;
+//         consoleInput.value = ''; // Clear input field
+//         processCommand(command);
+//     }
+// });
 
 function processCommand(command) {
     // Implement your command processing logic here
@@ -54,3 +56,18 @@ function processCommand(command) {
         consoleOutput.innerHTML += `<p>Command not recognized: ${command}</p>`;
     }
 }
+
+async function fetchData() {
+    try {
+        const response = await fetch('api');
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+        const data = await response.text();
+        console.log(data);
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
+}
+
+fetchData();

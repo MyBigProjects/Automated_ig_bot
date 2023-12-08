@@ -115,4 +115,15 @@ public class IndexModel : PageModel
         // Return a JSON response back to the frontend
         return Json(new { status = "success", message = "Data received successfully!" });
     }*/
+    
+    [ApiController]
+    [Route("[controller]")]
+    public class ApiController : ControllerBase
+    {
+        [HttpGet]
+        public string Get()
+        {
+            return "ok ";
+        }
+    }
 }

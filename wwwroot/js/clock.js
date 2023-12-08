@@ -26,7 +26,7 @@ function updateCountDown() {
     }
     countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
 
-    console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
+    // console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
 
     countDownTime--;
 
