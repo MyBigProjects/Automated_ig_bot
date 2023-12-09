@@ -58,8 +58,3 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 }
-async function delayedAction() {
-    console.log('Before delay');
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log('After 2 seconds');
-}
