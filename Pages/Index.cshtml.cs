@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace AutomatedInstagramBot.Pages;
 
+
+[Route("api/[controller]")]
+
 public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
@@ -22,6 +25,19 @@ public class IndexModel : PageModel
     public void OnGet()
     {
         // This is your page's initialization logic
+    }
+    [HttpPost("myMethod")]
+    public IActionResult MyMethod([FromBody] string data)
+    {
+        // Your logic here
+        string result = $"Received data: {data}";
+        return new JsonResult(result);
+    }
+    public IActionResult OnPostMyMethod([FromBody] string data)
+    {
+        // Your logic here
+        string result = $"Received data: {data}";
+        return new JsonResult(result);
     }
 
     public void OnTimerTick()
@@ -106,6 +122,23 @@ public class IndexModel : PageModel
             }
         }
     }
+
+    // [HttpPost("myMethod")]
+    // public IActionResult MyMethod([FromBody] string data)
+    // {
+    //     // Your logic here
+    //     string result = $"Received data: {data}";
+    //     return ;
+    // }
+
+
+
+
+
+
+
+
+
     /*[HttpPost]
     public ActionResult ProcessData(string name, string email)
     {
@@ -116,14 +149,14 @@ public class IndexModel : PageModel
         return Json(new { status = "success", message = "Data received successfully!" });
     }*/
     
-    [ApiController]
-    [Route("[controller]")]
-    public class ApiController : ControllerBase
-    {
-        [HttpGet]
-        public string Get()
-        {
-            return "ok ";
-        }
-    }
+    // [ApiController]
+    // [Route("[controller]")]
+    // public class ApiController : ControllerBase
+    // {
+    //     [HttpPost]
+    //     public string Get()
+    //     {
+    //         return "ok ";
+    //     }
+    // }
 }

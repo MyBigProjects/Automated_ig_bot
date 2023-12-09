@@ -57,17 +57,37 @@ function processCommand(command) {
     }
 }
 
-async function fetchData() {
-    try {
-        const response = await fetch('api');
-        if (!response.ok) {
-            throw new Error(`HTTP error: ${response.status}`);
-        }
-        const data = await response.text();
-        console.log(data);
-    } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-    }
-}
+// async function fetchData() {
+//     try {
+//         const response = await fetch('api');
+//         if (!response.ok) {
+//             throw new Error(`HTTP error: ${response.status}`);
+//         }
+//         const data = await response.text();
+//         console.log(data);
+//     } catch (error) {
+//         console.error('There was a problem with the fetch operation:', error);
+//     }
+// }
+// fetchData();
+const postData = {
+    key: 'value' // Replace this with your actual data
+};
 
-fetchData();
+fetch('/api/Index/myMethod', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(postData)
+})
+.then(response => response.json())
+.then(data => {
+    console.log('Success:', data);
+    // Handle the response data as needed
+})
+.catch((error) => {
+    console.error('Error:', error);
+    // Handle errors
+});
+

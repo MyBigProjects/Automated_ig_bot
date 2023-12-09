@@ -26,9 +26,10 @@ function updateCountDown() {
     }
     countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
 
-    // console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
+    console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
 
-    countDownTime--;
+    // countDownTime--;
+
 
     localStorage.setItem('countDownTime', countDownTime.toString());
 
@@ -39,7 +40,7 @@ function updateCountDown() {
         localStorage.setItem('countDownTime', countDownTime.toString());
     }
 }
-setInterval(updateCountDown, 1000);
+setInterval(updateCountDown, 500);
 
 function SiecleDone(element) {
     let chars = ['&', '<', ')', '8', '^', '!', "%", '#', '}', '+', '_', '=', '-', '='];
