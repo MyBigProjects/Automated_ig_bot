@@ -24,11 +24,12 @@ function updateCountDown() {
     if (seconds < 10) {
         seconds = '0' + seconds.toString();
     }
+    countDownTime--;
+    
     countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
 
     console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
 
-    // countDownTime--;
 
 
     localStorage.setItem('countDownTime', countDownTime.toString());
