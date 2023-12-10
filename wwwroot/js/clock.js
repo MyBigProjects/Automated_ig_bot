@@ -25,23 +25,27 @@ function updateCountDown() {
         seconds = '0' + seconds.toString();
     }
     countDownTime--;
-    
-    countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
+    try {
+        countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
+    } catch (error) {
+        countDownTime--;
+        console.log("one second is gone");
+    }
 
-    console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
+    // console.log(`${hours} : ${minutes} : ${seconds}`);   //this is for debuging
 
 
 
     localStorage.setItem('countDownTime', countDownTime.toString());
 
-    if (countDownTime < 22*60 * 60) {   //0
+    if (countDownTime < 23 * 60 * 60) {   //0
         SiecleDone(countDownElement);
         countDownTime = 24 * 60 * 60;  //24
 
         localStorage.setItem('countDownTime', countDownTime.toString());
     }
 }
-setInterval(updateCountDown, 500);
+setInterval(updateCountDown, 10);
 
 function SiecleDone(element) {
     let chars = ['&', '<', ')', '8', '^', '!', "%", '#', '}', '+', '_', '=', '-', '='];
@@ -53,6 +57,22 @@ function SiecleDone(element) {
 
         element.textContent = one + ' : ' + two + ' : ' + three;
     }
+    $.ajax({
+        type: "POST",
+        url: "/Index?handler=GetAjax",
+        data: { "name": "DownloadMemes" },
+        contentType: 'application/x-www-form-urlencoded',
+        dataType: "json",
+        headers:
+        {
+            "RequestVerificationToken": $('input:hidden[name="__RequestVerificationToken"]').val()
+        },
+        success: function (msg) {
+            console.log(msg);
+             
+        }
+    });
+
 }
 function getRandomInt(min, max) {
     min = Math.ceil(min);

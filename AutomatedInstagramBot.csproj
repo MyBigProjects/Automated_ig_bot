@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Google.Apis.Auth" Version="1.62.0" />
     <PackageReference Include="Google.Apis.Drive.v3" Version="1.62.0.3155" />
+    <PackageReference Include="InstagramApiSharp" Version="1.7.0" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="13.3.0" />
   </ItemGroup>
 
 </Project>

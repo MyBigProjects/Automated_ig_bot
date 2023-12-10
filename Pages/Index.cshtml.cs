@@ -7,6 +7,19 @@ using Google.Apis.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Threading.Tasks;
+using InstagramApiSharp.API.Builder;
+using InstagramApiSharp.API;
+using InstagramApiSharp.Classes;
+using InstagramApiSharp.Logger;
+using InstagramApiSharp.Classes.Models;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Net.Http;
+using ImageMagick;
+
 
 namespace AutomatedInstagramBot.Pages;
 
@@ -26,102 +39,185 @@ public class IndexModel : PageModel
     {
         // This is your page's initialization logic
     }
-    [HttpPost("myMethod")]
-    public IActionResult MyMethod([FromBody] string data)
+    public IActionResult OnPostGetAjax(string name)
     {
-        // Your logic here
-        string result = $"Received data: {data}";
-        return new JsonResult(result);
-    }
-    public IActionResult OnPostMyMethod([FromBody] string data)
-    {
-        // Your logic here
-        string result = $"Received data: {data}";
-        return new JsonResult(result);
-    }
-
-    public void OnTimerTick()
-    {
-        // This method can be used to trigger your Instagram bot
-        // Create an instance of your Instagram bot class
-        // InstagramBot instagramBot = new InstagramBot();
-
-        // Call the method that uploads memes to Instagram
-        //  instagramBot.UploadMemes();
-
-        // Optionally, you can log the action or handle any errors here
-
-        using (var stream = new FileStream("~/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
+        switch (name)
         {
-            GoogleClientSecrets clientSecrets = GoogleClientSecrets.Load(stream);
+            case "DownloadMemes":
+                DownloadMemes();
+                break;
+                    }
+        return new JsonResult("Hello " + name);
+    }
+    static void DeleteFile(string path)
+    {
+        string filesPath = @path;
 
-            // Create an OAuth2.0 credential
-            var credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                clientSecrets.Secrets,
-                new[] { DriveService.Scope.Drive },
-                "user",
-                System.Threading.CancellationToken.None).Result;
+        System.IO.File.Delete(filesPath);
 
-            var service = new DriveService(new BaseClientService.Initializer
+        Console.Write($"file {filesPath} has ben deleted ");
+    }
+    static void ConvertImage(string inputFilePath, string outputFilePath)
+    {
+        //  = "downloaded_image.jpg"; // Replace with the path to your downloaded image
+        //  = "converted_image.jpg"; // Specify the output path and filename
+
+        using (MagickImage image = new MagickImage(inputFilePath))
+        {
+            // Convert the image to JPEG format
+            image.Write(outputFilePath);
+        }
+
+        Console.WriteLine("Image converted successfully.");
+    }
+
+
+
+
+    static async Task UploadMemes(string[] names)
+    {
+
+        UserSessionData userSession = new UserSessionData
+        {
+            UserName = "thatmemeguy35",
+            Password = "meme35!!"
+        };
+
+        IInstaApi api = InstaApiBuilder.CreateBuilder()
+        .SetUser(userSession)
+        .UseLogger(new DebugLogger(InstagramApiSharp.Logger.LogLevel.All))
+        .Build();
+
+        // Log in to Instagram
+        var loginResult = await api.LoginAsync();
+
+        if (loginResult.Succeeded)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Logged in successfully!");
+            Console.ResetColor();
+
+
+            for (int i = 0; i < names.Length; i++)
             {
-                HttpClientInitializer = credential,
-                ApplicationName = "DriveConsole",
-            });
-
-            // Specify the ID of the "memes" folder
-            var memesFolderId = "1FcvGQ-dRsGFFkiwwWyOONUEbO4VWT9hC"; // Replace with the actual folder ID
-
-            // List files in the "memes" folder
-            var memesQuery = $"'{memesFolderId}' in parents and mimeType contains 'image/'";
-            var memesListRequest = service.Files.List();
-            memesListRequest.Q = memesQuery;
-            var memes = memesListRequest.Execute().Files;
-
-            int amountOfMemesTodownload = 2;
-
-            if (memes.Count > amountOfMemesTodownload - 1)
-            {
-                Random rand = new Random();
-
-                for (int i = 0; i < amountOfMemesTodownload; i++)
+                string name = names[i];
+                var MediaImage = new InstaImageUpload
                 {
-                    memes = memesListRequest.Execute().Files;
+                    Height = 1080,
+                    Width = 1080,
+                    Uri = $@"wwwroot/memes/{name}"
+                    //Uri = @"\Users\student\Desktop\IgBot\memes\meme1.png"//path
+                    //    Uri = "\Users\student\Desktop\IgBot\memes\frog.jpg"
+                };
+                var postResult = await api.MediaProcessor.UploadPhotoAsync(MediaImage,"");//i
 
-                    // Download the random image from the "memes" folder
-                    var memeToDownload = memes[rand.Next(0, memes.Count)];
-
-                    Console.WriteLine($"Meme Name: {memeToDownload.Name}");
-                    Console.WriteLine($"Meme ID: {memeToDownload.Id}");
+                if (postResult.Succeeded)
+                {
                     
-                    // Download the meme
-                    var memeStream = new MemoryStream();
-                    service.Files.Get(memeToDownload.Id).Download(memeStream);
-                    System.IO.File.WriteAllBytes($"~/memes/{memeToDownload.Name}", memeStream.ToArray());
-
-                    Console.WriteLine("Image downloaded successfully.");
-
-                    var imageId = memeToDownload.Id;
-                    var imageName = memeToDownload.Name;
-
-                    try
-                    {
-                        service.Files.Delete(imageId).Execute();
-                        Console.WriteLine($"Meme Name: {imageId}");
-                        Console.WriteLine($"Meme ID: {imageName}");
-                        Console.WriteLine($"Image deleted successfully.");
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"Error deleting image: {ex.Message}");
-                    }
+                    DeleteFile($"wwwroot/memes/{name}");
+                    // DeleteDescription(descriptonePath);
                 }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"Meme posting failed: {postResult.Info.Message}");
+                    Console.ResetColor();
+                }
+
             }
-            else
-            {
-                Console.WriteLine("No images found in the 'memes' folder.");
-            }
+
+        }
+        else
+        {
+            UploadMemes(names);
         }
     }
+public void DownloadMemes()
+{
+    // This method can be used to trigger your Instagram bot
+    // Create an instance of your Instagram bot class
+    // InstagramBot instagramBot = new InstagramBot();
+
+    // Call the method that uploads memes to Instagram
+    //  instagramBot.UploadMemes();
+
+    // Optionally, you can log the action or handle any errors here
+
+    using (var stream = new FileStream("wwwroot/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
+    {
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.Load(stream);
+
+        // Create an OAuth2.0 credential
+        var credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+            clientSecrets.Secrets,
+            new[] { DriveService.Scope.Drive },
+            "user",
+            System.Threading.CancellationToken.None).Result;
+
+        var service = new DriveService(new BaseClientService.Initializer
+        {
+            HttpClientInitializer = credential,
+            ApplicationName = "DriveConsole",
+        });
+
+        // Specify the ID of the "memes" folder
+        var memesFolderId = "1FcvGQ-dRsGFFkiwwWyOONUEbO4VWT9hC"; // Replace with the actual folder ID
+
+        // List files in the "memes" folder
+        var memesQuery = $"'{memesFolderId}' in parents and mimeType contains 'image/'";
+        var memesListRequest = service.Files.List();
+        memesListRequest.Q = memesQuery;
+        var memes = memesListRequest.Execute().Files;
+
+        int amountOfMemesTodownload = 2;
+
+        if (memes.Count > amountOfMemesTodownload - 1)
+        {
+            Random rand = new Random();
+            string[] imageNames = new string[amountOfMemesTodownload];
+
+            for (int i = 0; i < amountOfMemesTodownload; i++)
+            {
+                memes = memesListRequest.Execute().Files;
+
+                // Download the random image from the "memes" folder
+                var memeToDownload = memes[rand.Next(0, memes.Count)];
+
+                // Console.WriteLine($"Meme Name: {memeToDownload.Name}");
+                // Console.WriteLine($"Meme ID: {memeToDownload.Id}");
+
+                // Download the meme
+                var memeStream = new MemoryStream();
+                service.Files.Get(memeToDownload.Id).Download(memeStream);
+                System.IO.File.WriteAllBytes($"wwwroot/memes/{memeToDownload.Name}", memeStream.ToArray());
+
+                // Console.WriteLine("Image downloaded successfully.");
+
+                var imageId = memeToDownload.Id;
+                var imageName = memeToDownload.Name;
+
+                imageNames[i] = imageName.ToString();
+
+                try
+                {
+                    service.Files.Delete(imageId).Execute();
+                    // Console.WriteLine($"Meme Name: {imageId}");
+                    // Console.WriteLine($"Meme ID: {imageName}");
+                    // Console.WriteLine($"Image deleted successfully.");
+                }
+                catch (Exception ex)
+                {
+                    // Console.WriteLine($"Error deleting image: {ex.Message}");
+                }
+            }
+                UploadMemes(imageNames);
+        }
+        else
+        {
+            // Console.WriteLine("No images found in the 'memes' folder.");
+        }
+    }
+}
 
     // [HttpPost("myMethod")]
     // public IActionResult MyMethod([FromBody] string data)
@@ -131,7 +227,7 @@ public class IndexModel : PageModel
     //     return ;
     // }
 
-
+}
 
 
 
@@ -148,7 +244,7 @@ public class IndexModel : PageModel
         // Return a JSON response back to the frontend
         return Json(new { status = "success", message = "Data received successfully!" });
     }*/
-    
+
     // [ApiController]
     // [Route("[controller]")]
     // public class ApiController : ControllerBase
@@ -159,4 +255,4 @@ public class IndexModel : PageModel
     //         return "ok ";
     //     }
     // }
-}
+

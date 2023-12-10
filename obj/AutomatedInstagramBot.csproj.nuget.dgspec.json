@@ -45,6 +45,14 @@
             "Google.Apis.Drive.v3": {
               "target": "Package",
               "version": "[1.62.0.3155, )"
+            },
+            "InstagramApiSharp": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Magick.NET-Q16-AnyCPU": {
+              "target": "Package",
+              "version": "[13.3.0, )"
             }
           },
           "imports": [
