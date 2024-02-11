@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mD6Xk/d604Ed/hXDgskuZyGbeP1ys5NaexVj5Dogj1Q=",
+  "Hash": "fA1hAh0owhdbZQKjIET7V/7zBqw0LD05yCEermy91TM=",
   "Source": "AutomatedInstagramBot",
   "BasePath": "_content/AutomatedInstagramBot",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AutomatedInstagramBot/wwwroot",
       "Source": "AutomatedInstagramBot",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/obj/Debug/net7.0/scopedcss/bundle/AutomatedInstagramBot.styles.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/obj/Debug/net7.0/scopedcss/bundle/AutomatedInstagramBot.styles.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Computed",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/obj/Debug/net7.0/scopedcss/bundle/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/obj/Debug/net7.0/scopedcss/bundle/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "AutomatedInstagramBot.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/student/Desktop/AutomatedInstagramBot/obj/Debug/net7.0/scopedcss/bundle/AutomatedInstagramBot.styles.css"
+      "OriginalItemSpec": "/workspaces/AutomayedInstagramBot/obj/Debug/net7.0/scopedcss/bundle/AutomatedInstagramBot.styles.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/obj/Debug/net7.0/scopedcss/projectbundle/AutomatedInstagramBot.bundle.scp.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/obj/Debug/net7.0/scopedcss/projectbundle/AutomatedInstagramBot.bundle.scp.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Computed",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/obj/Debug/net7.0/scopedcss/projectbundle/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/obj/Debug/net7.0/scopedcss/projectbundle/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "AutomatedInstagramBot.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,30 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/student/Desktop/AutomatedInstagramBot/obj/Debug/net7.0/scopedcss/projectbundle/AutomatedInstagramBot.bundle.scp.css"
+      "OriginalItemSpec": "/workspaces/AutomayedInstagramBot/obj/Debug/net7.0/scopedcss/projectbundle/AutomatedInstagramBot.bundle.scp.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/css/site.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/css/site.css",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/css/styles.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/css/styles.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -85,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/css/styles.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/favicon.ico",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/favicon.ico",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -102,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/js/clock.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/js/clock.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "js/clock.js",
       "AssetKind": "All",
@@ -119,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/js/clock.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/js/Index.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/js/Index.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "js/Index.js",
       "AssetKind": "All",
@@ -136,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/js/Index.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/js/site.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/js/site.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -153,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -170,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -187,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -204,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -221,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -238,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -255,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -272,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -289,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -306,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -323,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -340,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -357,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -374,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -391,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -408,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -425,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -442,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -459,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -476,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -493,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -510,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -527,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -544,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -561,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -578,10 +595,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -595,10 +612,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -612,10 +629,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -629,10 +646,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -646,10 +663,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -663,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -680,10 +697,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -697,10 +714,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -714,10 +731,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -731,10 +748,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -748,10 +765,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -765,10 +782,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -782,10 +799,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -799,10 +816,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -816,10 +833,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -833,10 +850,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -850,10 +867,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -867,10 +884,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -884,10 +901,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -901,10 +918,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -918,10 +935,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -935,10 +952,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -952,10 +969,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -969,10 +986,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -986,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1003,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1020,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1037,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1054,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1071,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1105,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "AutomatedInstagramBot",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/student/Desktop/AutomatedInstagramBot/wwwroot/",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
       "BasePath": "_content/AutomatedInstagramBot",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1120,6 +1137,108 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/memes/meme1.png",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "memes/meme1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/memes/meme1.png"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/memes/meme13.png",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "memes/meme13.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/memes/meme13.png"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/memes/meme4.png",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "memes/meme4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/memes/meme4.png"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/memes/meme5.png",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "memes/meme5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/memes/meme5.png"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/memes/meme7.png",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "memes/meme7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/memes/meme7.png"
+    },
+    {
+      "Identity": "/workspaces/AutomayedInstagramBot/wwwroot/memes/meme9.png",
+      "SourceId": "AutomatedInstagramBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/AutomayedInstagramBot/wwwroot/",
+      "BasePath": "_content/AutomatedInstagramBot",
+      "RelativePath": "memes/meme9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/memes/meme9.png"
     }
   ]
 }

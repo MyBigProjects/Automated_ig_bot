@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "6UxsapjNBoV9WLQDWJIdKWJC5pWW0YdNFoCZbtI1MDnNzj2ADh4oQetPdgXqgfk2wkFDNCVT9kXx7iXbFHjSCw==",
+  "dgSpecHash": "5Uxp19FBUEjbVOdPyTsHQ8gIjSSqOqE+jiK/Ve1Y/01DfDsu8bjindoLaes+16maoRYGPX9X04IB4KehnfTT+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj",
+  "projectFilePath": "/workspaces/AutomayedInstagramBot/AutomatedInstagramBot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis\\1.62.0\\google.apis.1.62.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis.auth\\1.62.0\\google.apis.auth.1.62.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis.core\\1.62.0\\google.apis.core.1.62.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\google.apis.drive.v3\\1.62.0.3155\\google.apis.drive.v3.1.62.0.3155.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\instagramapisharp\\1.7.0\\instagramapisharp.1.7.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\magick.net-q16-anycpu\\13.3.0\\magick.net-q16-anycpu.13.3.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\magick.net.core\\13.3.0\\magick.net.core.13.3.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\portable.bouncycastle\\1.8.6.7\\portable.bouncycastle.1.8.6.7.nupkg.sha512"
+    "/home/codespace/.nuget/packages/google.apis/1.62.0/google.apis.1.62.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/google.apis.auth/1.62.0/google.apis.auth.1.62.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/google.apis.core/1.62.0/google.apis.core.1.62.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/google.apis.drive.v3/1.62.0.3155/google.apis.drive.v3.1.62.0.3155.nupkg.sha512",
+    "/home/codespace/.nuget/packages/instagramapisharp/1.7.0/instagramapisharp.1.7.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/magick.net-q16-anycpu/13.3.0/magick.net-q16-anycpu.13.3.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/magick.net.core/13.3.0/magick.net.core.13.3.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/codespace/.nuget/packages/portable.bouncycastle/1.8.6.7/portable.bouncycastle.1.8.6.7.nupkg.sha512"
   ],
   "logs": []
 }

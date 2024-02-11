@@ -38,25 +38,21 @@ function updateCountDown() {
 
     localStorage.setItem('countDownTime', countDownTime.toString());
 
-    if (countDownTime < 23 * 60 * 60) {   //0
+    if (countDownTime < 0) {   //0 
         SiecleDone(countDownElement);
         countDownTime = 24 * 60 * 60;  //24
 
         localStorage.setItem('countDownTime', countDownTime.toString());
     }
 }
-setInterval(updateCountDown, 10);
+setInterval(updateCountDown, 1000);
 
 function SiecleDone(element) {
-    let chars = ['&', '<', ')', '8', '^', '!', "%", '#', '}', '+', '_', '=', '-', '='];
 
-    for (let i = 1; i <= 50; i++) {
-        let one = chars[getRandomInt(0, chars.length)] + chars[getRandomInt(0, chars.length)];
-        let two = chars[getRandomInt(0, chars.length)] + chars[getRandomInt(0, chars.length)];
-        let three = chars[getRandomInt(0, chars.length)] + chars[getRandomInt(0, chars.length)];
-
-        element.textContent = one + ' : ' + two + ' : ' + three;
+    for (let i = 0; i < 30; i++) {
+        ClockAnimation();        
     }
+    
     $.ajax({
         type: "POST",
         url: "/Index?handler=GetAjax",
@@ -72,8 +68,21 @@ function SiecleDone(element) {
              
         }
     });
-
+    
 }
+function ClockAnimation() {
+    let chars = ['&', '<', ')', '8', '^', '!', "%", '#', '}', '+', '_', '=', '-', '='];
+    
+    for (let i = 1; i <= 500; i++) {
+        
+        let one = chars[getRandomInt(0, chars.length)] + chars[getRandomInt(0, chars.length)];
+        let two = chars[getRandomInt(0, chars.length)] + chars[getRandomInt(0, chars.length)];
+        let three = chars[getRandomInt(0, chars.length)] + chars[getRandomInt(0, chars.length)];
+    
+        element.textContent = one + ' : ' + two + ' : ' + three;
+    }
+}
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);

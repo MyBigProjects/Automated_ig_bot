@@ -9,37 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AutomatedInstagramBot
 build_property.RootNamespace = AutomatedInstagramBot
-build_property.ProjectDir = /home/student/Desktop/AutomatedInstagramBot/
+build_property.ProjectDir = /workspaces/AutomayedInstagramBot/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/student/Desktop/AutomatedInstagramBot
+build_property.MSBuildProjectDirectory = /workspaces/AutomayedInstagramBot
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/Error.cshtml]
+[/workspaces/AutomayedInstagramBot/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/Index.cshtml]
+[/workspaces/AutomayedInstagramBot/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+[/workspaces/AutomayedInstagramBot/Pages/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/workspaces/AutomayedInstagramBot/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/_ViewImports.cshtml]
+[/workspaces/AutomayedInstagramBot/Pages/Terminal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVybWluYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/AutomayedInstagramBot/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/_ViewStart.cshtml]
+[/workspaces/AutomayedInstagramBot/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/student/Desktop/AutomatedInstagramBot/Pages/Shared/_Layout.cshtml]
+[/workspaces/AutomayedInstagramBot/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qodf90f1jl
