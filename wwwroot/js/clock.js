@@ -24,7 +24,9 @@ function updateCountDown() {
     if (seconds < 10) {
         seconds = '0' + seconds.toString();
     }
+
     countDownTime--;
+
     try {
         countDownElement.textContent = `${hours} : ${minutes} : ${seconds}`;
     } catch (error) {
@@ -38,12 +40,16 @@ function updateCountDown() {
 
     localStorage.setItem('countDownTime', countDownTime.toString());
 
-    if (countDownTime < 0) {   //0 
+    console.log("that if statment started");
+    if (countDownTime < 23 * 60 * 60) {
+
+        console.log("that if statment runed");   //0 
         SiecleDone(countDownElement);
         countDownTime = 24 * 60 * 60;  //24
 
         localStorage.setItem('countDownTime', countDownTime.toString());
     }
+    console.log("that if statment ended");
 }
 setInterval(updateCountDown, 1000);
 

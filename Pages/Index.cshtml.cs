@@ -114,7 +114,7 @@ public class IndexModel : PageModel
                 if (postResult.Succeeded)
                 {
                     
-                    DeleteFile($"wwwroot/memes/{name}");
+                    DeleteFile($@"wwwroot/memes/{name}");
                     // DeleteDescription(descriptonePath);
                 }
                 else
@@ -134,15 +134,6 @@ public class IndexModel : PageModel
     }
 public void DownloadMemes()
 {
-    // This method can be used to trigger your Instagram bot
-    // Create an instance of your Instagram bot class
-    // InstagramBot instagramBot = new InstagramBot();
-
-    // Call the method that uploads memes to Instagram
-    //  instagramBot.UploadMemes();
-
-    // Optionally, you can log the action or handle any errors here
-
     using (var stream = new FileStream("wwwroot/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
     {
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.Load(stream);
@@ -186,7 +177,6 @@ public void DownloadMemes()
                 // Console.WriteLine($"Meme Name: {memeToDownload.Name}");
                 // Console.WriteLine($"Meme ID: {memeToDownload.Id}");
 
-                // Download the meme
                 var memeStream = new MemoryStream();
                 service.Files.Get(memeToDownload.Id).Download(memeStream);
                 System.IO.File.WriteAllBytes($"wwwroot/memes/{memeToDownload.Name}", memeStream.ToArray());
@@ -203,7 +193,7 @@ public void DownloadMemes()
                     service.Files.Delete(imageId).Execute();
                     // Console.WriteLine($"Meme Name: {imageId}");
                     // Console.WriteLine($"Meme ID: {imageName}");
-                    // Console.WriteLine($"Image deleted successfully.");
+                    Console.WriteLine($"Image deleted successfully.");
                 }
                 catch (Exception ex)
                 {

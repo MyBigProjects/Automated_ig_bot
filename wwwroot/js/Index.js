@@ -70,24 +70,4 @@ function processCommand(command) {
 //     }
 // }
 // fetchData();
-const postData = {
-    key: 'value' // Replace this with your actual data
-};
-
-fetch('/api/Index/myMethod', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(postData)
-})
-.then(response => response.json())
-.then(data => {
-    console.log('Success:', data);
-    // Handle the response data as needed
-})
-.catch((error) => {
-    console.error('Error:', error);
-    // Handle errors
-});
 
