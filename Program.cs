@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR(); // Add SignalR services
 
 var app = builder.Build();
 
@@ -22,4 +23,8 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+// Map the SignalR hub endpoint
+app.MapHub<ClockHub>("/clockHub");
+
 app.Run();
+

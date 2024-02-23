@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using Google.Apis.Auth.OAuth2;
+using Microsoft.AspNetCore.SignalR;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -29,15 +30,25 @@ namespace AutomatedInstagramBot.Pages;
 public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
+    private readonly IHubContext<ClockHub> _clockHub;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public IndexModel(ILogger<IndexModel> logger, IHubContext<ClockHub> clockHub)
     {
         _logger = logger;
+        _clockHub = clockHub;
     }
 
-    public void OnGet()
+    public async void OnGet()
     {
         // This is your page's initialization logic
+        int remainingSeconds = 24 * 60 * 60; // Initial time
+
+        while (remainingSeconds > 0)
+        {
+            await _clockHub.Clients.All.SendAsync("UpdateTime", remainingSeconds);
+            await Task.Delay(1000); // Wait for 1 second
+            remainingSeconds--;
+        }
     }
     public IActionResult OnPostGetAjax(string name)
     {

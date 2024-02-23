@@ -58,4 +58,5 @@ button.accept-policy[b-0modkp9gng] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  height: fit-content;
 }

@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/AutomayedInstagramBot/AutomatedInstagramBot.csproj": {}
+    "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj": {}
   },
   "projects": {
-    "/workspaces/AutomayedInstagramBot/AutomatedInstagramBot.csproj": {
+    "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/AutomayedInstagramBot/AutomatedInstagramBot.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj",
         "projectName": "AutomatedInstagramBot",
-        "projectPath": "/workspaces/AutomayedInstagramBot/AutomatedInstagramBot.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/AutomayedInstagramBot/obj/",
+        "projectPath": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\AutomatedInstagramBot.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\ProgramingProjects\\AutomayedInstagramBot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
-          "/usr/local/dotnet/7.0.306/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -36,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Google.Apis.Auth": {
               "target": "Package",
@@ -75,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

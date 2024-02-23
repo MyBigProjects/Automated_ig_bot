@@ -1,6 +1,7 @@
 body{
     background-color: #000000;
     overflow: hidden;
+    text-rendering: optimizeLegibility;
 }
 a{
     color: yellow;
@@ -25,6 +26,7 @@ a{
     text-align: center;
     padding-top: 3%;
     font-size: 750%;
+    filter: blur(0.5px)
 }
 #console {
     background-color: black;
