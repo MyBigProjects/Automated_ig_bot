@@ -57,7 +57,7 @@ public class IndexModel : PageModel
             case "DownloadMemes":
                 DownloadMemes();
                 break;
-                    }
+        }
         return new JsonResult("Hello " + name);
     }
     static void DeleteFile(string path)
@@ -120,11 +120,11 @@ public class IndexModel : PageModel
                     //Uri = @"\Users\student\Desktop\IgBot\memes\meme1.png"//path
                     //    Uri = "\Users\student\Desktop\IgBot\memes\frog.jpg"
                 };
-                var postResult = await api.MediaProcessor.UploadPhotoAsync(MediaImage,"");//i
+                var postResult = await api.MediaProcessor.UploadPhotoAsync(MediaImage, "");//i
 
                 if (postResult.Succeeded)
                 {
-                    
+
                     DeleteFile($@"wwwroot/memes/{name}");
                     // DeleteDescription(descriptonePath);
                 }
@@ -143,82 +143,82 @@ public class IndexModel : PageModel
             UploadMemes(names);
         }
     }
-public void DownloadMemes()
-{
-    using (var stream = new FileStream("wwwroot/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
+    public void DownloadMemes()
     {
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.Load(stream);
-
-        // Create an OAuth2.0 credential
-        var credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-            clientSecrets.Secrets,
-            new[] { DriveService.Scope.Drive },
-            "user",
-            System.Threading.CancellationToken.None).Result;
-
-        var service = new DriveService(new BaseClientService.Initializer
+        using (var stream = new FileStream("wwwroot/client_secret_644166516897-gc0bk2rjao7ugjnbs49n3dlupt9sjl6b.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
         {
-            HttpClientInitializer = credential,
-            ApplicationName = "DriveConsole",
-        });
+            GoogleClientSecrets clientSecrets = GoogleClientSecrets.Load(stream);
 
-        // Specify the ID of the "memes" folder
-        var memesFolderId = "1FcvGQ-dRsGFFkiwwWyOONUEbO4VWT9hC"; // Replace with the actual folder ID
+            // Create an OAuth2.0 credential
+            var credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                clientSecrets.Secrets,
+                new[] { DriveService.Scope.Drive },
+                "user",
+                System.Threading.CancellationToken.None).Result;
 
-        // List files in the "memes" folder
-        var memesQuery = $"'{memesFolderId}' in parents and mimeType contains 'image/'";
-        var memesListRequest = service.Files.List();
-        memesListRequest.Q = memesQuery;
-        var memes = memesListRequest.Execute().Files;
-
-        int amountOfMemesTodownload = 2;
-
-        if (memes.Count > amountOfMemesTodownload - 1)
-        {
-            Random rand = new Random();
-            string[] imageNames = new string[amountOfMemesTodownload];
-
-            for (int i = 0; i < amountOfMemesTodownload; i++)
+            var service = new DriveService(new BaseClientService.Initializer
             {
-                memes = memesListRequest.Execute().Files;
+                HttpClientInitializer = credential,
+                ApplicationName = "DriveConsole",
+            });
 
-                // Download the random image from the "memes" folder
-                var memeToDownload = memes[rand.Next(0, memes.Count)];
+            // Specify the ID of the "memes" folder
+            var memesFolderId = "1FcvGQ-dRsGFFkiwwWyOONUEbO4VWT9hC"; // Replace with the actual folder ID
 
-                // Console.WriteLine($"Meme Name: {memeToDownload.Name}");
-                // Console.WriteLine($"Meme ID: {memeToDownload.Id}");
+            // List files in the "memes" folder
+            var memesQuery = $"'{memesFolderId}' in parents and mimeType contains 'image/'";
+            var memesListRequest = service.Files.List();
+            memesListRequest.Q = memesQuery;
+            var memes = memesListRequest.Execute().Files;
 
-                var memeStream = new MemoryStream();
-                service.Files.Get(memeToDownload.Id).Download(memeStream);
-                System.IO.File.WriteAllBytes($"wwwroot/memes/{memeToDownload.Name}", memeStream.ToArray());
+            int amountOfMemesTodownload = 2;
 
-                // Console.WriteLine("Image downloaded successfully.");
+            if (memes.Count > amountOfMemesTodownload - 1)
+            {
+                Random rand = new Random();
+                string[] imageNames = new string[amountOfMemesTodownload];
 
-                var imageId = memeToDownload.Id;
-                var imageName = memeToDownload.Name;
-
-                imageNames[i] = imageName.ToString();
-
-                try
+                for (int i = 0; i < amountOfMemesTodownload; i++)
                 {
-                    service.Files.Delete(imageId).Execute();
-                    // Console.WriteLine($"Meme Name: {imageId}");
-                    // Console.WriteLine($"Meme ID: {imageName}");
-                    Console.WriteLine($"Image deleted successfully.");
+                    memes = memesListRequest.Execute().Files;
+
+                    // Download the random image from the "memes" folder
+                    var memeToDownload = memes[rand.Next(0, memes.Count)];
+
+                    // Console.WriteLine($"Meme Name: {memeToDownload.Name}");
+                    // Console.WriteLine($"Meme ID: {memeToDownload.Id}");
+
+                    var memeStream = new MemoryStream();
+                    service.Files.Get(memeToDownload.Id).Download(memeStream);
+                    System.IO.File.WriteAllBytes($"wwwroot/memes/{memeToDownload.Name}", memeStream.ToArray());
+
+                    // Console.WriteLine("Image downloaded successfully.");
+
+                    var imageId = memeToDownload.Id;
+                    var imageName = memeToDownload.Name;
+
+                    imageNames[i] = imageName.ToString();
+
+                    try
+                    {
+                        service.Files.Delete(imageId).Execute();
+                        // Console.WriteLine($"Meme Name: {imageId}");
+                        // Console.WriteLine($"Meme ID: {imageName}");
+                        Console.WriteLine($"Image deleted successfully.");
+                    }
+                    catch (Exception ex)
+                    {
+                        // Console.WriteLine($"Error deleting image: {ex.Message}");
+                    }
                 }
-                catch (Exception ex)
-                {
-                    // Console.WriteLine($"Error deleting image: {ex.Message}");
-                }
-            }
                 UploadMemes(imageNames);
-        }
-        else
-        {
-            // Console.WriteLine("No images found in the 'memes' folder.");
+            }
+            else
+            {
+                // Console.WriteLine("No images found in the 'memes' folder.");
+            }
         }
     }
-}
 
     // [HttpPost("myMethod")]
     // public IActionResult MyMethod([FromBody] string data)
@@ -236,24 +236,24 @@ public void DownloadMemes()
 
 
 
-    /*[HttpPost]
-    public ActionResult ProcessData(string name, string email)
-    {
-        // Process the data or perform any backend tasks
-        // ...
+/*[HttpPost]
+public ActionResult ProcessData(string name, string email)
+{
+    // Process the data or perform any backend tasks
+    // ...
 
-        // Return a JSON response back to the frontend
-        return Json(new { status = "success", message = "Data received successfully!" });
-    }*/
+    // Return a JSON response back to the frontend
+    return Json(new { status = "success", message = "Data received successfully!" });
+}*/
 
-    // [ApiController]
-    // [Route("[controller]")]
-    // public class ApiController : ControllerBase
-    // {
-    //     [HttpPost]
-    //     public string Get()
-    //     {
-    //         return "ok ";
-    //     }
-    // }
+// [ApiController]
+// [Route("[controller]")]
+// public class ApiController : ControllerBase
+// {
+//     [HttpPost]
+//     public string Get()
+//     {
+//         return "ok ";
+//     }
+// }
 

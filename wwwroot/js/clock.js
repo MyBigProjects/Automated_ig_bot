@@ -100,7 +100,7 @@ connection.on("UpdateTime", function (time) {
     // let seconds1 = time % 60;
     updateCountDown(time)
 
-    $("#time").text(hours1 + " : " + minutes1 + " : " + seconds1);
+    // $("#time").text(hours1 + " : " + minutes1 + " : " + seconds1);
 });
 
 connection.start().then(function () {
